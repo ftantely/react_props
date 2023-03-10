@@ -14,8 +14,13 @@ const Home = () => {
   ]);
   return (
     <div>
-      <BlogList />
+      <BlogList data_1={blogs} />
     </div>
+    /*
+       We pass the data "blogs" from "const [blogs, setBlogs]" to
+       component "<BlogList />"
+       "data_1={blogs}" is a prop that need to be received inside "BlogList" component
+       */
   );
 };
 
